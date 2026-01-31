@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Image Resizer</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Smart Image Resizer</h1>
+  <input type="file" id="upload" accept="image/*">
+</header>
+
+<!-- CONTROLS -->
+<div class="controls">
+
+  <div class="modes">
+    <label><input type="radio" name="mode" value="fit" checked> Fit</label>
+    <label><input type="radio" name="mode" value="fill"> Fill</label>
+    <label><input type="radio" name="mode" value="space"> Space</label>
+    <label><input type="radio" name="mode" value="blur"> Blur</label>
+  </div>
+
+  <div class="extra-controls">
+
+    <!-- FILL EXTRA -->
+    <div id="fillControl">
+      <label>
+        <input type="checkbox" id="stretchToggle">
+        Stretch image (may distort)
+      </label>
+    </div>
+
+    <!-- SPACE EXTRA -->
+    <div id="spaceControl">
+      Background:
+      <input type="color" id="bgColor" value="#000000">
+    </div>
+
+    <!-- BLUR EXTRA -->
+    <div id="blurControl">
+      Blur:
+      <input type="range" id="blurRange" min="5" max="40" value="20">
+    </div>
+
+  </div>
+</div>
+
+<p id="selectedText">Upload an image to preview</p>
+
+<!-- PLATFORM GRID -->
+<section class="grid">
+
+  <div class="card whatsapp">
+    <div class="card-header">
+      <h2>WhatsApp</h2>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <button data-w="1" data-h="1" data-name="WhatsApp DP">DP</button>
+  </div>
+
+  <div class="card instagram">
+    <div class="card-header">
+      <h2>Instagram</h2>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <button data-w="1" data-h="1" data-name="Instagram Post">Post</button>
+    <button data-w="9" data-h="16" data-name="Instagram Story">Story</button>
+    <button data-w="1" data-h="1" data-name="Instagram DP">DP</button>
+  </div>
+
+  <div class="card youtube">
+    <div class="card-header">
+      <h2>YouTube</h2>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    <button data-w="16" data-h="9" data-name="YouTube Thumbnail">Thumbnail</button>
+  </div>
+
+  <div class="card linkedin">
+    <div class="card-header">
+      <h2>LinkedIn</h2>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <button data-w="1" data-h="1" data-name="LinkedIn Profile">Profile</button>
+    <button data-w="1.91" data-h="1" data-name="LinkedIn Post">Post</button>
+  </div>
+
+</section>
+
+<!-- PREVIEW -->
+<div class="preview">
+  <canvas id="canvas"></canvas>
+</div>
+
+<button id="download">Download Image</button>
+
+<script src="script.js"></script>
+</body>
+</html>
