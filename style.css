@@ -1,20 +1,33 @@
+/* RESET & BASE */
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 body {
-  background: #f3f4f6;
+  background: #f3f4f6; /* soft grey */
   margin: 0;
   padding: 20px;
   color: #111;
 }
 
+/* HEADER */
 header {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
+header h1 {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* CONTROLS */
 .controls {
   text-align: center;
   margin-bottom: 10px;
@@ -39,13 +52,14 @@ header {
   font-size: 14px;
 }
 
+/* SELECTED TEXT */
 #selectedText {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
 
-/* GRID */
+/* RESPONSIVE GRID */
 .grid {
   display: grid;
   gap: 16px;
@@ -53,15 +67,20 @@ header {
 }
 
 @media (min-width: 600px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1000px) {
-  .grid { grid-template-columns: repeat(4, 1fr); }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
+/* PLATFORM CARDS */
 .card {
-  background: #fff;
+  background: #ffffff;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
@@ -76,6 +95,18 @@ header {
   margin-bottom: 10px;
 }
 
+.card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* PLATFORM ICON COLORS */
+.whatsapp i { color: #25D366; }
+.instagram i { color: #E1306C; }
+.youtube i { color: #FF0000; }
+.linkedin i { color: #0A66C2; }
+
+/* PRESET BUTTONS */
 .card button {
   width: 100%;
   padding: 9px;
@@ -84,41 +115,51 @@ header {
   border: 1px solid #e5e7eb;
   background: #f9fafb;
   cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.card button:hover {
+  background: #eef2ff;
 }
 
 .card button.active {
   background: #22c55e;
-  color: white;
+  color: #ffffff;
   border-color: #22c55e;
 }
 
-.whatsapp i { color: #25D366; }
-.instagram i { color: #E1306C; }
-.youtube i { color: #FF0000; }
-.linkedin i { color: #0A66C2; }
-
-/* PREVIEW FIX */
+/* PREVIEW AREA */
 .preview {
   max-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 canvas {
   max-width: 100%;
-  max-height: 60vh;
+  max-height: 60vh; /* key fix */
+  width: auto;
+  height: auto;
   border: 1px solid #ddd;
-  background: #fff;
+  background: #ffffff;
 }
 
+/* DOWNLOAD BUTTON */
 #download {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
   background: #2563eb;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 15px;
+}
+
+#download:hover {
+  background: #1d4ed8;
 }
