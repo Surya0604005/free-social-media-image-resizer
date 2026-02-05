@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://surya0604005.github.io/free-social-media-image-resizer/sitemap.xml
