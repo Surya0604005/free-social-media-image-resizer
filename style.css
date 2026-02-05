@@ -163,3 +163,166 @@ canvas {
 #download:hover {
   background: #1d4ed8;
 }
+
+.site-footer {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+
+  display: flex;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #555;
+  background: transparent;
+}
+
+.site-footer a {
+  color: #555;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+}
+
+/* ---------- Contact Page ---------- */
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.contact-card {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.contact-card h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.contact-text {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.contact-box {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-box span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.contact-box a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.response-note {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- About & Privacy Pages ---------- */
+
+.info-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.info-card {
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.info-card h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.info-card ul {
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+
+.info-card li {
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.info-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
