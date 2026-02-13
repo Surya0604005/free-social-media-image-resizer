@@ -2,17 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!--adsense-->
-<meta name="google-adsense-account" content="ca-pub-2150779778269829">
-  <!-- SEO TITLE -->
-  <title>
-    Free Social Media Image Resizer for WhatsApp, Instagram & YouTube
-  </title>
-  <link rel="icon" type="image/png" href="favicon.png/Picsart_26-02-01_11-13-56-115.png">
 
+  <!-- SEO -->
+  <title>Free Social Media Image Resizer for WhatsApp, Instagram & YouTube</title>
 
-
-  <!-- SEO META -->
   <meta name="description"
     content="Free online social media image resizer for WhatsApp DP, Instagram post and story, YouTube thumbnail and LinkedIn. Fit, fill, blur and stretch images instantly. No signup required.">
 
@@ -22,13 +15,26 @@
   <meta name="author" content="Free Social Media Image Resizer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://surya0604005.github.io/free-social-media-image-resizer/">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#4f46e5">
+
   <!-- Icons -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- 🔥 SITE NAME STRUCTURED DATA (IMPORTANT) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,115 +45,126 @@
   }
   </script>
 
-  <link rel="canonical" href="https://surya0604005.github.io/free-social-media-image-resizer/">
-<!--google verfication code-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2150779778269829"
-     crossorigin="anonymous"></script>
+  <!-- Google AdSense (verification only, ads later) -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2150779778269829"
+    crossorigin="anonymous"></script>
+
 </head>
+
 <body>
 
-<header>
-  <h1>Free Social Media Image Resizer</h1>
-  <p class="subtitle">
-    Resize images perfectly for WhatsApp, Instagram, YouTube & LinkedIn — no ratios needed.
-  </p>
-  <input type="file" id="upload" accept="image/*">
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>Free Social Media Image Resizer</h1>
+    <p class="subtitle">
+      Resize images perfectly for WhatsApp, Instagram, YouTube & LinkedIn — no ratios needed.
+    </p>
+    <input type="file" id="upload" accept="image/*">
+  </header>
 
-<!-- CONTROLS -->
-<div class="controls">
+  <!-- CONTROLS -->
+  <div class="controls">
 
-  <div class="modes">
-    <label><input type="radio" name="mode" value="fit" checked> Fit</label>
-    <label><input type="radio" name="mode" value="fill"> Fill</label>
-    <label><input type="radio" name="mode" value="space"> Space</label>
-    <label><input type="radio" name="mode" value="blur"> Blur</label>
+    <div class="modes">
+      <label><input type="radio" name="mode" value="fit" checked> Fit</label>
+      <label><input type="radio" name="mode" value="fill"> Fill</label>
+      <label><input type="radio" name="mode" value="space"> Space</label>
+      <label><input type="radio" name="mode" value="blur"> Blur</label>
+    </div>
+
+    <div class="extra-controls">
+
+      <div id="fillControl">
+        <label>
+          <input type="checkbox" id="stretchToggle">
+          Stretch image (may distort)
+        </label>
+      </div>
+
+      <div id="spaceControl">
+        Background:
+        <input type="color" id="bgColor" value="#000000">
+      </div>
+
+      <div id="blurControl">
+        Blur:
+        <input type="range" id="blurRange" min="5" max="40" value="20">
+      </div>
+
+    </div>
   </div>
 
-  <div class="extra-controls">
+  <p id="selectedText">Upload an image to preview</p>
 
-    <!-- FILL EXTRA -->
-    <div id="fillControl">
-      <label>
-        <input type="checkbox" id="stretchToggle">
-        Stretch image (may distort)
-      </label>
+  <!-- PLATFORM GRID -->
+  <section class="grid">
+
+    <div class="card whatsapp">
+      <div class="card-header">
+        <h2>WhatsApp</h2>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <button data-w="1" data-h="1" data-name="WhatsApp DP">DP</button>
     </div>
 
-    <!-- SPACE EXTRA -->
-    <div id="spaceControl">
-      Background:
-      <input type="color" id="bgColor" value="#000000">
+    <div class="card instagram">
+      <div class="card-header">
+        <h2>Instagram</h2>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <button data-w="1" data-h="1" data-name="Instagram Post">Post</button>
+      <button data-w="9" data-h="16" data-name="Instagram Story">Story</button>
+      <button data-w="1" data-h="1" data-name="Instagram DP">DP</button>
     </div>
 
-    <!-- BLUR EXTRA -->
-    <div id="blurControl">
-      Blur:
-      <input type="range" id="blurRange" min="5" max="40" value="20">
+    <div class="card youtube">
+      <div class="card-header">
+        <h2>YouTube</h2>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <button data-w="16" data-h="9" data-name="YouTube Thumbnail">Thumbnail</button>
     </div>
 
-  </div>
-</div>
-
-<p id="selectedText">Upload an image to preview</p>
-
-<!-- PLATFORM GRID -->
-<section class="grid">
-
-  <div class="card whatsapp">
-    <div class="card-header">
-      <h2>WhatsApp</h2>
-      <i class="fa-brands fa-whatsapp"></i>
+    <div class="card linkedin">
+      <div class="card-header">
+        <h2>LinkedIn</h2>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <button data-w="1" data-h="1" data-name="LinkedIn Profile">Profile</button>
+      <button data-w="1.91" data-h="1" data-name="LinkedIn Post">Post</button>
     </div>
-    <button data-w="1" data-h="1" data-name="WhatsApp DP">DP</button>
-  </div>
 
-  <div class="card instagram">
-    <div class="card-header">
-      <h2>Instagram</h2>
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-    <button data-w="1" data-h="1" data-name="Instagram Post">Post</button>
-    <button data-w="9" data-h="16" data-name="Instagram Story">Story</button>
-    <button data-w="1" data-h="1" data-name="Instagram DP">DP</button>
-  </div>
+  </section>
 
-  <div class="card youtube">
-    <div class="card-header">
-      <h2>YouTube</h2>
-      <i class="fa-brands fa-youtube"></i>
-    </div>
-    <button data-w="16" data-h="9" data-name="YouTube Thumbnail">Thumbnail</button>
+  <!-- PREVIEW -->
+  <div class="preview">
+    <canvas id="canvas"></canvas>
   </div>
 
-  <div class="card linkedin">
-    <div class="card-header">
-      <h2>LinkedIn</h2>
-      <i class="fa-brands fa-linkedin"></i>
-    </div>
-    <button data-w="1" data-h="1" data-name="LinkedIn Profile">Profile</button>
-    <button data-w="1.91" data-h="1" data-name="LinkedIn Post">Post</button>
-  </div>
+  <button id="download">Download Image</button>
 
-</section>
+  <!-- INSTALL BUTTON -->
+  <button id="installBtn" style="display:none;">Install App</button>
 
-<!-- PREVIEW -->
-<div class="preview">
-  <canvas id="canvas"></canvas>
-</div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="about.html">About</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="contact.html">Contact</a>
+  </footer>
 
-<button id="download">Download Image</button>
+  <!-- JS -->
+  <script src="script.js"></script>
 
-<footer class="site-footer">
-  <a href="about.html">About</a> |
-  <a href="privacy.html">Privacy Policy</a> |
-  <a href="contact.html">Contact</a>
-</footer>
+  <!-- SERVICE WORKER -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js");
+      });
+    }
+  </script>
 
-
-<script src="script.js"></script>
 </body>
 </html>
-
-
-
