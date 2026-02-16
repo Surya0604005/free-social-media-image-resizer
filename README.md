@@ -1,52 +1,51 @@
 ![Made with HTML](https://img.shields.io/badge/Made%20with-HTML5-orange)
 ![Styled with CSS](https://img.shields.io/badge/Styled%20with-CSS3-blue)
 ![Powered by JS](https://img.shields.io/badge/Powered%20by-JavaScript-yellow)
-
 ![PWA](https://img.shields.io/badge/PWA-Installable-purple)
 ![Offline Ready](https://img.shields.io/badge/Offline-Supported-success)
-
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
 ![SEO Optimized](https://img.shields.io/badge/SEO-Optimized-green)
-
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-blueviolet)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://surya0604005.github.io/free-social-media-image-resizer/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/Surya0604005/free-social-media-image-resizer)
+
 # 📸 Free Social Media Image Resizer
 
-A free, fast, and privacy-friendly web app to resize images for popular social media platforms like **WhatsApp, Instagram, YouTube, and LinkedIn**.  
-No login. No uploads to a server. Everything works directly in your browser.
+A free, fast, and privacy-friendly web application to resize images for popular social media platforms such as **WhatsApp, Instagram, YouTube, and LinkedIn**.  
+No login required. No server uploads. Everything works directly in your browser.
 
 ---
 
 ## 🌐 Live Demo
-🔗 https://your-username.github.io/free-social-media-image-resizer/
+https://surya0604005.github.io/free-social-media-image-resizer/
 
 ---
 
-## ✨ Key Features
-- ✅ Resize images for multiple social media platforms
-- ✅ Works completely **offline** after first load (PWA)
-- ✅ Client-side image processing (no server upload)
-- ✅ Responsive design (mobile & desktop)
-- ✅ Installable as a mobile / desktop app
-- ✅ Fast and lightweight
-- ✅ SEO optimized
+## ✨ Features
+- Resize images for multiple social media platforms
+- Client-side image processing (no server upload)
+- Works offline after first visit
+- Installable as a mobile and desktop app (PWA)
+- Fully responsive design
+- Fast and lightweight
+- SEO optimized
 
 ---
 
 ## 🛠️ Tech Stack
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-- **Progressive Web App (PWA)**
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Progressive Web App (PWA)
 
 ---
 
 ## 📱 Progressive Web App (PWA)
-This project includes full PWA support:
-- `manifest.json` for installability
-- `service-worker.js` for offline caching
-- App icons for all devices
-- Install prompt supported on Chrome & mobile browsers
+- Installable on mobile and desktop
+- Offline support using Service Worker
+- App manifest included
+- Optimized icons for all devices
 
 ---
 
@@ -73,71 +72,47 @@ free-social-media-image-resizer/
 │
 └── README.md
 
-
 ---
 
-## ⚙️ How It Works
-1. Select or upload an image
-2. Choose a target platform (Instagram, WhatsApp, etc.)
-3. The image is resized instantly in the browser
-4. Download the resized image
-
-> All processing happens locally — your images are never uploaded.
-
----
-
-## 🚀 How to Run Locally
+## ⚙️ How to Run Locally
 ```bash
-git clone https://github.com/surya0604005/free-social-media-image-resizer.git
+git clone https://github.com/Surya0604005/free-social-media-image-resizer.git
 cd free-social-media-image-resizer
 open index.html
 🔒 Privacy
 
-No user data is collected
-
-No images are uploaded to any server
-
-Works fully offline after first visit
+-No user data is collected
+-No images are uploaded to any server
+-Works fully offline after the first visit
 
 📈 SEO & Discoverability
 
-Sitemap included (sitemap.xml)
-
-Robots file configured
-
-Google Search Console verification added
-
-Meta tags optimized for search engines
+-Sitemap included (sitemap.xml)
+-Robots file configured
+-Google Search Console verification added
+-Meta tags optimized for search engines
 
 🎯 Use Cases
 
-Social media creators
-
-Students & beginners learning JavaScript
-
-Portfolio showcase project
-
-Quick image resizing without software
+-Social media creators
+-Students and beginners learning JavaScript
+-Portfolio showcase project
+-Quick image resizing without installing software
 
 🔮 Future Improvements
 
-Add more social media presets
-
-Drag & drop image support
-
-Batch image resizing
-
-Dark mode toggle
-
-Aspect-ratio lock options
+-Add more social media presets
+-Drag and drop image support
+-Batch image resizing
+-Dark mode toggle
+-Aspect-ratio lock options
 
 👨‍💻 Author
 
 Surya Teja Katta
-🔗 GitHub: https://github.com/Surya0604005
+GitHub: https://github.com/Surya0604005
+LinkedIn: https://www.linkedin.com/in/surya-teja-katta-816614300
 
-🔗 LinkedIn: [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/surya-teja-katta-816614300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+📄 License
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://your-username.github.io/free-social-media-image-resizer/)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/your-username/free-social-media-image-resizer)
-
+This project is open-source and free to use.
