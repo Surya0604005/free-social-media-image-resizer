@@ -80,6 +80,7 @@ git clone https://github.com/Surya0604005/free-social-media-image-resizer.git
 cd free-social-media-image-resizer
 open index.html
 
+---
 
 🔒 Privacy
 
@@ -108,6 +109,8 @@ open index.html
 -Batch image resizing
 -Dark mode toggle
 -Aspect-ratio lock options
+
+---
 
 ## 👨‍💻 Author
 
