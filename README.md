@@ -75,6 +75,7 @@ free-social-media-image-resizer/
 ---
 
 ## ⚙️ How to Run Locally
+```md
 ```bash
 git clone https://github.com/Surya0604005/free-social-media-image-resizer.git
 cd free-social-media-image-resizer
