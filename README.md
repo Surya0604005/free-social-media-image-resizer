@@ -75,11 +75,11 @@ free-social-media-image-resizer/
 ---
 
 ## ⚙️ How to Run Locally
-```md
 ```bash
 git clone https://github.com/Surya0604005/free-social-media-image-resizer.git
 cd free-social-media-image-resizer
 open index.html
+
 
 🔒 Privacy
 
@@ -109,11 +109,13 @@ open index.html
 -Dark mode toggle
 -Aspect-ratio lock options
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Surya Teja Katta
-GitHub: https://github.com/Surya0604005
-LinkedIn: https://www.linkedin.com/in/surya-teja-katta-816614300
+**Surya Teja Katta**
+
+- 🔗 GitHub: [https://github.com/Surya0604005](https://github.com/Surya0604005)
+- 🔗 LinkedIn: [https://www.linkedin.com/in/surya-teja-katta-816614300](https://www.linkedin.com/in/surya-teja-katta-816614300)
+
 
 📄 License
 
