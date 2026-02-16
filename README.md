@@ -82,35 +82,37 @@ open index.html
 ```
 ---
 
-🔒 Privacy
+## 🔐 Privacy
 
--No user data is collected
--No images are uploaded to any server
--Works fully offline after the first visit
+- No user data is collected
+- No images are uploaded to any server
+- Works fully offline after the first visit
 
-📈 SEO & Discoverability
 
--Sitemap included (sitemap.xml)
--Robots file configured
--Google Search Console verification added
--Meta tags optimized for search engines
+## 📈 SEO & Discoverability
 
-🎯 Use Cases
+- Sitemap included (`sitemap.xml`)
+- Robots file configured
+- Google Search Console verification added
+- Meta tags optimized for search engines
 
--Social media creators
--Students and beginners learning JavaScript
--Portfolio showcase project
--Quick image resizing without installing software
 
-🔮 Future Improvements
+## 🎯 Use Cases
 
--Add more social media presets
--Drag and drop image support
--Batch image resizing
--Dark mode toggle
--Aspect-ratio lock options
+- Social media creators
+- Students and beginners learning JavaScript
+- Portfolio showcase project
+- Quick image resizing without installing software
 
----md
+
+## 🚀 Future Improvements
+
+- Add more social media presets
+- Drag and drop image support
+- Batch image resizing
+- Dark mode toggle
+- Aspect-ratio lock options
+
 
 ## 👨‍💻 Author
 
