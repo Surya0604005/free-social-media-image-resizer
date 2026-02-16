@@ -122,6 +122,7 @@ open index.html
 - 🔗 LinkedIn: [https://www.linkedin.com/in/surya-teja-katta-816614300](https://www.linkedin.com/in/surya-teja-katta-816614300)
 
 
-📄 License
+## 📄 License
 
-This project is open-source and free to use.
+This project is open-source and free to use for learning, personal, and portfolio purposes.
+
